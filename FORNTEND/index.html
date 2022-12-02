@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RaveDeFi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/Frame 1 (2).svg" type="image/x-icon">
+</head>
+<body>
+    <section class="first-section">
+        <div class="navigation">
+            <a href="#" class="logo">
+                <img src="assets/Frame 1 (2).svg" alt="icon" class="logo-svg">
+                
+                RaveDeFi
+            
+            </a>
+
+            <a href="https://www.sciencedirect.com/science/article/pii/S266660302100021X#:~:text=A%20Blockchain%20network%20is%20used,ones%20in%20the%20medical%20field." target="_blank" class="learn-more">
+                Learn More
+            </a>
+        </div>
+
+        <div class="main-sec">
+    
+            <h1 class="heading">Send Ethereum tokens to multiple addresses at once from anywhere in the world</h1>
+
+            <p class="sub-heading"> <span>RaveDeFi</span> provides a fast, secured and easy way to Send cryptocurrencies and Ethereum tokens from anywhere around the world to multiple addresses all at once. </p>
+
+            <button id="connect" class="connect-btn">Connect Wallet</button>
+        </div>
+    </section>
+
+
+    <section class="second-section">
+        <div class="main-nav">
+            <a href="#" class="logo">
+                <img src="assets/Frame 1 (2).svg" alt="icon" class="logo-svg">
+                
+                RaveDeFi
+            
+            </a>
+
+
+            <div class="sec-items">
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#" class="transactions">Transactions</a></li>
+                <li><a href="https://github.com/designerquam" target="_blank">Github</a></li>
+            </div>
+
+            <button class="request">
+                Fund Account
+            </button>
+
+        </div>
+        
+        <div class="transaction-sec">
+            <div class="send-left-col">
+                <p class="get-done">
+                    Get it done with RaveDeFi
+                </p>
+
+                <div class="title">
+                    New way to send Ethereum to Multiple Addresses around the world.
+                </div>
+
+                <form>
+                   <div class="addresses-send">             
+                        <div class="addresses" style="display:flex; flex-direction: column; margin-bottom: 5px;">
+                            <label for="address-to" style="color:#696969; margin:0 0 5px 0; ">Address</label>
+                            <input type="text" id="address-to" placeholder="0x0..." style="width:420px;">
+                        </div>
+
+                        <button class="add-addy" style="margin-bottom:4.5px;">Add<span>+</span></button>
+                   </div> 
+
+
+                   
+                    <ul class="added-addy">
+
+                    </ul>
+
+
+                   <div class="amounts" style="display:flex; flex-direction: column;">
+                        <label for="amount-to-send" style="color:#696969; margin:0 0 5px 0;">Amount</label>
+                        <input type="number" id="amount-to-send" class="amount-send" placeholder="0.0" min="0" step="any">
+                   </div>
+
+                    <div class="description" style="display:flex; flex-direction: column;">
+                        <label for="desc-to-send" style="color:#696969; margin:0 0 5px 0;">Purpose (optional)</label>
+                        <input type="text" id="desc-to-send" class="desc-send" placeholder="Enter description">
+                    </div>
+
+                   <button id="send-to-multi">Send</button>
+                </form>
+            </div>
+    
+            <div class="card-right-col">
+                <div class="card-virtual">
+                    <div class="card-virtual-title">
+                        <h6>Rave</h6>
+
+                        <svg width="50" height="50" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="none"/>
+                            <mask id="path-1-inside-1_2_4" fill="white">
+                            <path d="M134.648 133.795C141.501 127.012 146.168 118.37 148.058 108.962C149.949 99.5538 148.979 89.8021 145.27 80.9399C141.561 72.0776 135.281 64.503 127.223 59.1737C119.165 53.8445 109.691 51 100 51C90.3087 51 80.8351 53.8445 72.7771 59.1737C64.7191 64.503 58.4386 72.0776 54.7299 80.9399C51.0212 89.8021 50.0508 99.5538 51.9415 108.962C53.8322 118.37 58.499 127.012 65.3518 133.795L86.9344 112.432C84.3502 109.875 82.5904 106.616 81.8774 103.068C81.1645 99.5203 81.5304 95.843 82.9289 92.5011C84.3274 89.1592 86.6958 86.3028 89.7344 84.2932C92.773 82.2836 96.3455 81.2109 100 81.2109C103.655 81.2109 107.227 82.2836 110.266 84.2932C113.304 86.3028 115.673 89.1592 117.071 92.5011C118.47 95.843 118.836 99.5203 118.123 103.068C117.41 106.616 115.65 109.875 113.066 112.432L134.648 133.795Z"/>
+                            </mask>
+                            <path d="M134.648 133.795C141.501 127.012 146.168 118.37 148.058 108.962C149.949 99.5538 148.979 89.8021 145.27 80.9399C141.561 72.0776 135.281 64.503 127.223 59.1737C119.165 53.8445 109.691 51 100 51C90.3087 51 80.8351 53.8445 72.7771 59.1737C64.7191 64.503 58.4386 72.0776 54.7299 80.9399C51.0212 89.8021 50.0508 99.5538 51.9415 108.962C53.8322 118.37 58.499 127.012 65.3518 133.795L86.9344 112.432C84.3502 109.875 82.5904 106.616 81.8774 103.068C81.1645 99.5203 81.5304 95.843 82.9289 92.5011C84.3274 89.1592 86.6958 86.3028 89.7344 84.2932C92.773 82.2836 96.3455 81.2109 100 81.2109C103.655 81.2109 107.227 82.2836 110.266 84.2932C113.304 86.3028 115.673 89.1592 117.071 92.5011C118.47 95.843 118.836 99.5203 118.123 103.068C117.41 106.616 115.65 109.875 113.066 112.432L134.648 133.795Z" stroke="black" stroke-width="20" mask="url(#path-1-inside-1_2_4)"/>
+                        </svg>
+                            
+                    </div>
+
+                    <h1>
+                        RAVE
+                    </h1>
+
+
+                    <div class="card-details">
+                        <div class="card-num">
+                            <h6>Card Address</h6>
+
+                            <h3 class="card-address">0x0000</h3>
+                        </div>
+
+                        <div class="card-balance">
+                            <h6>Card Balance (ETH)</h6>
+    
+                            <h3 class="contract-Balance">0.0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--CONFIRMATION MESSEGE-->
+    <div class="overlay"></div>
+
+    <div class="popup-confirm">
+        <div class="popup-message">
+           
+        </div>
+
+        <button id="confirm-transact"><div class="spinner"></div>Confirm</button>
+
+        <img src="assets/icons8-xbox-x-30.png" alt="" class="close-modal">
+    </div>
+
+
+    <!--FUND ACCOUNT MESSEGE-->
+    <div class="popup-complete">
+
+        <div class="enter-amount">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" step="any" placeholder="0.0">
+        </div>
+        
+        <button id="confirm-fund"><div class="spinner"></div>Enter</button>
+
+        <img src="assets/icons8-xbox-x-30.png" alt="" class="close-modal-fund">
+    </div>
+
+
+
+    <!--TRANSACTION HISTORY SECTION-->
+    <section class="transaction-history-sec" >
+       <div class="trans-his-nav">
+            <button id="go-home">Back</button>
+
+            <p href="#" class="logo">
+                <img src="assets/Frame 1 (2).svg" alt="icon" class="logo-svg">
+                
+                RaveDeFi
+            </p>
+       </div>
+
+       <p class="reffer">All Your Transactions are below</p>
+
+       <div class="main-trans-his" style="display:flex; flex-direction: column;">
+            <ul class="addedTrans">
+                
+            </ul>
+       </div>
+    </section>
+
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>

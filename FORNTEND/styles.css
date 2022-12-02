@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo-svg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.first-section {
+    background-color: #fafcfd;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.hide-first-section {
+    display: none;
+    opacity: 0;
+}
+
+.first-section .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .logo {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .learn-more {
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.first-section .main-sec {
+    margin: 7.5rem auto;
+}
+
+.main-sec .heading {
+    font-size: 3rem;
+    font-family:'inter', sans-serif;
+    font-weight: 500;
+    width: 950px ;
+    margin: 0 auto;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.main-sec .sub-heading {
+    font-size: 1.2rem;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: #797979;
+    line-height: 1.3;
+}
+
+.main-sec .sub-heading span{ position: relative; z-index: 1; color: black; font-weight: 500;}
+
+.main-sec .sub-heading span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #cbf587;
+    top: 15px;
+    left: 0;
+    z-index: -1;
+}
+
+.main-sec .connect-btn {
+    padding: 10px 30px;
+    color: black;
+    font-family: 'poppins', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #c5f577;
+    font-weight: 600 ;
+    cursor: pointer;
+}
+
+.main-sec .connect-btn:hover {
+    background-color: #b7f751;
+}
+
+
+/*#######---MAIN TRANSACTION SECTION STYLING--- #######*/
+
+.second-section {
+    background-color: #fafcfd;
+    width: 100%;
+    max-height: 100vh;
+    padding: 1rem 2rem;
+    position: relative;
+    display: none;
+}
+
+.show-second-section {
+    display: block;
+}
+
+.second-section .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.second-section .main-nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.second-section .main-nav .sec-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.second-section .main-nav .sec-items a {
+    display: inline-block;
+    color: #797979;
+    margin-left: 2rem;
+}
+
+.second-section .main-nav .sec-items a:hover {
+    color: black;
+}
+
+.second-section .main-nav .request {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500 ;
+    margin-left: 2rem;
+}
+
+
+.transaction-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.transaction-sec  .send-left-col {
+    margin-left: 5rem;
+}
+
+.transaction-sec  .send-left-col .title {
+    font-size: 2.5rem;
+    width: 35rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.get-done {
+    background-color: #d7ff95;
+    color: black;
+    font-weight: 500;
+    font-size: .7rem;
+    padding: 5px 10px;
+    width: 220px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.transaction-sec  .send-left-col form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:space-between;
+    gap: .85rem ;
+}
+
+.transaction-sec  .send-left-col form .addresses-send {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.transaction-sec  .send-left-col form .addresses-send .add-addy {
+    background-color:#b7f751;
+    padding: 10px 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.transaction-sec  .send-left-col form .addresses-send .add-addy:hover {
+    background-color: #9ee729;
+}
+
+.add-addy span {
+    margin-left: .5rem;
+}
+
+.transaction-sec  .send-left-col form input {
+    padding: 10px 20px;
+    outline: none;
+    outline: #b7f751;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.transaction-sec  .send-left-col form #send-to-multi {
+    padding: 10px 0px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.card-right-col { 
+    margin-right: 5rem; 
+    text-align: center; 
+    margin-top: 1.5rem;
+}
+
+.card-right-col .card-virtual {
+    width: 300px;
+    height: 400px;
+    background-color: #b7f751;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.card-right-col .card-virtual h1 {
+    font-size: 10rem;
+    overflow: hidden;
+}
+
+.card-right-col .card-virtual .card-virtual-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-right-col .card-virtual .card-virtual-title h6 {
+    font-size: 1rem;
+    font-weight: 500 ;
+}
+
+.card-details {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.card-details .card-num {
+    text-align: left;
+}
+
+.card-details .card-num .card-address {
+    font-weight: 500;
+}
+
+.card-details .card-num h6,
+.card-details .card-balance h6{
+    color: #161616;
+}
+
+.card-details .card-balance {
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+
+.card-details .card-balance h3 {font-weight: 500;}
+
+.addedDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #d4d4d4;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.remove-addy-btn {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed; 
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+.popup-confirm{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #afe650;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.popup-confirm .popup-message {
+    position: absolute;
+    width: 200px;
+    bottom:70px;
+    text-align: center;
+    left: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.close-modal {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.popup-confirm #confirm-transact,#confirm-fund {
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+    width: 90% ;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-complete {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #afe650;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    display: none;
+}
+
+.popup-complete .enter-amount {
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    left: 10px;
+    text-align: left;
+}
+
+.popup-complete .enter-amount label {
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+.popup-complete .enter-amount input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px ;
+    margin-left: 2px;
+    margin-top: .3rem;
+}
+
+.popup-complete .close-modal-fund {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.transaction-history-sec {
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFCFD;
+    padding: 2rem;
+    display: none;
+}
+
+.transaction-history-sec .trans-his-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-history-sec .trans-his-nav .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.transaction-history-sec .trans-his-nav .logo .logo-svg {
+    margin-right: 1rem;
+}
+
+.transaction-history-sec .trans-his-nav #go-home {
+    padding: 10px 30px;
+    color: white;
+    background-color: #161616;
+    border-radius:5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.transaction-history-sec .trans-his-nav #go-home:hover {
+    background-color: #424242;
+}
+
+.style {
+    margin-bottom: 1rem;
+}
+
+.reffer {
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.addedTrans {
+    margin: 6rem auto 0 auto;
+    width: 90%;
+    padding: 1rem;
+}
+
+.main-trans-his {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.spinner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid;
+    border-color: #dddddd;
+    border-right-color: #ffffff;
+    animation: spinner-d3wgkg 0.8s infinite linear;
+    display: none;
+ }
+ 
+
+@keyframes spinner-d3wgkg {
+    to {
+       transform: rotate(1turn);
+    }
+}
+
+.divList {
+    background-color: #bdbdbd;
+    margin-bottom: 1rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.divList span {
+    margin-right: 1rem;
+}
