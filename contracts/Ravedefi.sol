@@ -17,7 +17,7 @@ contract splitter {
     event fundWallet(address from, uint256 value);
 
 
-    //Trnasfer structure 
+    //Our Transfer structure 
     struct Transaction {
         address from;
         uint256 numOfAddy;
