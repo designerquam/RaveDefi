@@ -49,7 +49,6 @@ NOTE: Only the address who deployed this dApp would be able to call the Fund and
 * Redeploy this project in your terminal by using
   `npx run scripts/deploy.js --network mumbai`
 * Copy the contract address you get from deploying the script.
-* Get the contract abi from the splitter.json file which is the artifacts folder.
 * in the Hardhat config file add your own metamsak private key.
-* In the constants js file, change the contract address and the abi to yours.
+* In the constants js file, change the contract address to yours.
 * 🎉 Wooooh...Now you can use Rave.
