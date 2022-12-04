@@ -33,7 +33,9 @@ YOU KINDA GET THE IDEA 😉.
 
 * WHEN YOU USE RAVE YOU SAVE ALOT OF TIME AND EFFORT IN SENDING TRANSACTION.
 * SENDING TRANSACTIONS WITH RAVE PROVIDES A BLAZZING FAST TRANSACTION SPEED.
-* SENDING ETHERS WITH RAVE YOU ONLY NEED TO PAY ONE TRANSACTION FEE.....AS SUPPOSED TO PAYING MULTPLE TRANSACTION FEES WHEN TRYING TO SEND THEM SINGULARLY. 
+* SENDING ETHERS WITH RAVE YOU ONLY NEED TO PAY ONE TRANSACTION FEE.....AS SUPPOSED TO PAYING MULTPLE TRANSACTION FEES WHEN TRYING TO SEND THEM SINGULARLY.
+* RAVE WAS CREATED USING A HIGH LEVEL SMART CONTRACT SCRIPTING LANGUAGE KNOWN AS SOLIDITY
+* AND WAS DEPLOYED TO THE POLYGON CHAIN  
 
 ## HOW TO USE RAVE
 
@@ -46,10 +48,9 @@ YOU KINDA GET THE IDEA 😉.
 
 NOTE: Only the address who deployed this dApp would be able to call the Fund and the Tranfer/Share function.....So in order to use Rave Dapp.....
 * Clone this Github Repository 
+* Then in the Hardhat config file, add your own metamsak account private key.
 * Redeploy this project in your terminal by using
   `npx run scripts/deploy.js --network mumbai`
 * Copy the contract address you get from deploying the script.
-* Get the contract abi from the splitter.json file which is the artifacts folder.
-* in the Hardhat config file add your own metamsak private key.
-* In the constants js file, change the contract address and the abi to yours.
+* In the constants js file, change the contract address to yours.
 * 🎉 Wooooh...Now you can use Rave.
